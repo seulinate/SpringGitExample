@@ -30,8 +30,6 @@ public class MemberService {
 		return memberRepository.save(member);
 	}
 	
-	
-	
 	@Transactional
 	public Optional<Member> updateMember(Long id,Member memberDetails){
 		return memberRepository.findById(id).map(member -> {
