@@ -1,0 +1,7 @@
+version:'3.8'
+services:
+  spring-git-image:
+    build:.
+    container_name:springgitexample-app
+    ports:
+      -"8080:8080"
