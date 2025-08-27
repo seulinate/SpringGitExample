@@ -31,6 +31,7 @@ public class MemberService {
 	}
 	
 	
+	
 	@Transactional
 	public Optional<Member> updateMember(Long id,Member memberDetails){
 		return memberRepository.findById(id).map(member -> {
